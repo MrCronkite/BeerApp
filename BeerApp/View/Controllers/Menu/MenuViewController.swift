@@ -144,7 +144,7 @@ extension MenuViewController: UICollectionViewDataSource {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(СategoryCell.self)",
                                                                 for: indexPath) as? СategoryCell
             else { return UICollectionViewCell() }
-            cell.lableText.text = categoryBeer[indexPath.row]
+            cell.lableTextCell.text = categoryBeer[indexPath.row]
             return cell
         default: return UICollectionViewCell()
         }

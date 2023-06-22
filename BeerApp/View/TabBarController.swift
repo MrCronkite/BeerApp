@@ -37,8 +37,8 @@ extension TabBarController {
         tabBar.layer.borderWidth = 0.2
         tabBar.layer.borderColor = R.Colors.inactive.cgColor
         
-        let controllers: [NavBarControoler] = Tabs.allCases.map { tab in
-            let controller = NavBarControoler()
+        let controllers: [NavBarControler] = Tabs.allCases.map { tab in
+            let controller = NavBarControler()
             let assemblyBuilder = AssemblyModelBuilder()
             controller.tabBarItem = UITabBarItem(title: R.Strings.TabBar.title(for: tab),
                                                  image: R.ImagesBar.TabBar.icon(for: tab),

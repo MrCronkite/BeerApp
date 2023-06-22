@@ -19,6 +19,18 @@
 		B2BE660A2A44549D00F490B3 /* UIViewE.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE66092A44549D00F490B3 /* UIViewE.swift */; };
 		B2BE660C2A4454DC00F490B3 /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE660B2A4454DC00F490B3 /* NavBarController.swift */; };
 		B2BE66102A44554B00F490B3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE660F2A44554B00F490B3 /* MenuViewController.swift */; };
+		B2BE66132A446A7D00F490B3 /* AssemblyModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE66122A446A7D00F490B3 /* AssemblyModelBuilder.swift */; };
+		B2BE66152A446ACD00F490B3 /* Baner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE66142A446ACD00F490B3 /* Baner.swift */; };
+		B2BE66172A446B1000F490B3 /* NetworkServicesBeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE66162A446B1000F490B3 /* NetworkServicesBeer.swift */; };
+		B2BE66192A446B5E00F490B3 /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE66182A446B5E00F490B3 /* MenuPresenter.swift */; };
+		B2BE661B2A446BB800F490B3 /* MenuDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE661A2A446BB800F490B3 /* MenuDetailPresenter.swift */; };
+		B2BE661E2A446C0200F490B3 /* MenuRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE661D2A446C0200F490B3 /* MenuRouter.swift */; };
+		B2BE66212A446D2000F490B3 /* BannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE66202A446D2000F490B3 /* BannerCell.swift */; };
+		B2BE66232A446D6000F490B3 /* BeerTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE66222A446D6000F490B3 /* BeerTableCell.swift */; };
+		B2BE66252A446DB200F490B3 /* CetegoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE66242A446DB200F490B3 /* CetegoryCell.swift */; };
+		B2BE66272A446DEE00F490B3 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE66262A446DEE00F490B3 /* MenuButton.swift */; };
+		B2BE66292A446E1A00F490B3 /* NavBarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE66282A446E1A00F490B3 /* NavBarMenu.swift */; };
+		B2BE662B2A446E5100F490B3 /* MenuDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE662A2A446E5100F490B3 /* MenuDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +48,18 @@
 		B2BE66092A44549D00F490B3 /* UIViewE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewE.swift; sourceTree = "<group>"; };
 		B2BE660B2A4454DC00F490B3 /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
 		B2BE660F2A44554B00F490B3 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		B2BE66122A446A7D00F490B3 /* AssemblyModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyModelBuilder.swift; sourceTree = "<group>"; };
+		B2BE66142A446ACD00F490B3 /* Baner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Baner.swift; sourceTree = "<group>"; };
+		B2BE66162A446B1000F490B3 /* NetworkServicesBeer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServicesBeer.swift; sourceTree = "<group>"; };
+		B2BE66182A446B5E00F490B3 /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
+		B2BE661A2A446BB800F490B3 /* MenuDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDetailPresenter.swift; sourceTree = "<group>"; };
+		B2BE661D2A446C0200F490B3 /* MenuRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRouter.swift; sourceTree = "<group>"; };
+		B2BE66202A446D2000F490B3 /* BannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCell.swift; sourceTree = "<group>"; };
+		B2BE66222A446D6000F490B3 /* BeerTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableCell.swift; sourceTree = "<group>"; };
+		B2BE66242A446DB200F490B3 /* CetegoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CetegoryCell.swift; sourceTree = "<group>"; };
+		B2BE66262A446DEE00F490B3 /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
+		B2BE66282A446E1A00F490B3 /* NavBarMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarMenu.swift; sourceTree = "<group>"; };
+		B2BE662A2A446E5100F490B3 /* MenuDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +127,7 @@
 		B2BE65F62A44533800F490B3 /* Builder */ = {
 			isa = PBXGroup;
 			children = (
+				B2BE66122A446A7D00F490B3 /* AssemblyModelBuilder.swift */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -111,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				B2BE65FF2A4453CB00F490B3 /* Beer.swift */,
+				B2BE66142A446ACD00F490B3 /* Baner.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -118,6 +144,7 @@
 		B2BE65F82A44534D00F490B3 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				B2BE66162A446B1000F490B3 /* NetworkServicesBeer.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -125,6 +152,7 @@
 		B2BE65F92A44536000F490B3 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				B2BE661C2A446BDC00F490B3 /* MenuPresenter */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -132,6 +160,7 @@
 		B2BE65FA2A44536B00F490B3 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				B2BE661D2A446C0200F490B3 /* MenuRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -184,9 +213,32 @@
 		B2BE660E2A44552700F490B3 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				B2BE661F2A446D0000F490B3 /* Views */,
 				B2BE660F2A44554B00F490B3 /* MenuViewController.swift */,
+				B2BE662A2A446E5100F490B3 /* MenuDetailViewController.swift */,
 			);
 			path = Menu;
+			sourceTree = "<group>";
+		};
+		B2BE661C2A446BDC00F490B3 /* MenuPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				B2BE66182A446B5E00F490B3 /* MenuPresenter.swift */,
+				B2BE661A2A446BB800F490B3 /* MenuDetailPresenter.swift */,
+			);
+			path = MenuPresenter;
+			sourceTree = "<group>";
+		};
+		B2BE661F2A446D0000F490B3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B2BE66202A446D2000F490B3 /* BannerCell.swift */,
+				B2BE66222A446D6000F490B3 /* BeerTableCell.swift */,
+				B2BE66242A446DB200F490B3 /* CetegoryCell.swift */,
+				B2BE66262A446DEE00F490B3 /* MenuButton.swift */,
+				B2BE66282A446E1A00F490B3 /* NavBarMenu.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,15 +312,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2BE65FE2A44539F00F490B3 /* StorageManager.swift in Sources */,
+				B2BE661E2A446C0200F490B3 /* MenuRouter.swift in Sources */,
 				B2BE66102A44554B00F490B3 /* MenuViewController.swift in Sources */,
 				B2BE65E12A4451CE00F490B3 /* AppDelegate.swift in Sources */,
+				B2BE66252A446DB200F490B3 /* CetegoryCell.swift in Sources */,
 				B2BE66082A44548D00F490B3 /* UIColorE.swift in Sources */,
 				B2BE65E32A4451CE00F490B3 /* SceneDelegate.swift in Sources */,
 				B2BE66052A44545800F490B3 /* Resources.swift in Sources */,
+				B2BE66212A446D2000F490B3 /* BannerCell.swift in Sources */,
 				B2BE66022A44540700F490B3 /* TabBarController.swift in Sources */,
+				B2BE66132A446A7D00F490B3 /* AssemblyModelBuilder.swift in Sources */,
 				B2BE660A2A44549D00F490B3 /* UIViewE.swift in Sources */,
+				B2BE66272A446DEE00F490B3 /* MenuButton.swift in Sources */,
 				B2BE660C2A4454DC00F490B3 /* NavBarController.swift in Sources */,
+				B2BE66172A446B1000F490B3 /* NetworkServicesBeer.swift in Sources */,
+				B2BE66152A446ACD00F490B3 /* Baner.swift in Sources */,
+				B2BE662B2A446E5100F490B3 /* MenuDetailViewController.swift in Sources */,
+				B2BE66232A446D6000F490B3 /* BeerTableCell.swift in Sources */,
 				B2BE66002A4453CB00F490B3 /* Beer.swift in Sources */,
+				B2BE661B2A446BB800F490B3 /* MenuDetailPresenter.swift in Sources */,
+				B2BE66292A446E1A00F490B3 /* NavBarMenu.swift in Sources */,
+				B2BE66192A446B5E00F490B3 /* MenuPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,7 +476,6 @@
 				INFOPLIST_FILE = BeerApp/SupportingFille/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -440,7 +503,6 @@
 				INFOPLIST_FILE = BeerApp/SupportingFille/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
