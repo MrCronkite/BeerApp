@@ -92,14 +92,13 @@
 		B2BE65DF2A4451CE00F490B3 /* BeerApp */ = {
 			isa = PBXGroup;
 			children = (
-				B2BE65FC2A44538300F490B3 /* View */,
-				B2BE65FB2A44537500F490B3 /* Storage */,
-				B2BE65FA2A44536B00F490B3 /* Router */,
-				B2BE65F92A44536000F490B3 /* Presenter */,
-				B2BE65F82A44534D00F490B3 /* Network */,
-				B2BE65F72A44534200F490B3 /* Model */,
-				B2BE65F62A44533800F490B3 /* Builder */,
 				B2BE65F42A44524D00F490B3 /* Aplication */,
+				B2BE65F62A44533800F490B3 /* Builder */,
+				B2BE65F72A44534200F490B3 /* Model */,
+				B2BE65F82A44534D00F490B3 /* Network */,
+				B2BE65FC2A44538300F490B3 /* View */,
+				B2BE65F92A44536000F490B3 /* Presenter */,
+				B2BE65FB2A44537500F490B3 /* Storage */,
 				B2BE65F52A44525D00F490B3 /* SupportingFille */,
 			);
 			path = BeerApp;
@@ -127,6 +126,7 @@
 		B2BE65F62A44533800F490B3 /* Builder */ = {
 			isa = PBXGroup;
 			children = (
+				B2BE65FA2A44536B00F490B3 /* Router */,
 				B2BE66122A446A7D00F490B3 /* AssemblyModelBuilder.swift */,
 			);
 			path = Builder;
