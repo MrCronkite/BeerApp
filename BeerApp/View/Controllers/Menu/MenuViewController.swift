@@ -176,12 +176,10 @@ extension MenuViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "\(BeerTableCell.self)",
                                                        for: indexPath) as? BeerTableCell
         else { return UITableViewCell() }
-        let description = presenter.beerElement?[indexPath.row].description
-        let title = presenter.beerElement?[indexPath.row].name
-        let image = storage.images(forKey: .keysBeer)?[indexPath.row]
-        cell.descriptionText.text = description
-        cell.headerText.text = title
-        cell.imageViewBeer.image = image
+        
+        guard let title = presenter.beerElement?[indexPath.row] else { return UITableViewCell() }
+        cell.setupDataCell(title)
+        print(title)
         return cell
     }
 }
