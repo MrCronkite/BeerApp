@@ -98,6 +98,6 @@ extension BeerTableCell {
     func setupDataCell(_ beerData: BeerElement) {
         nameBeerTextLable.text = beerData.name
         beerDescriptionLable.text = beerData.description
-        beerImageView.image = beerData.imageURL
+        beerImageView.image(url: beerData.imageURL)
     }
 }

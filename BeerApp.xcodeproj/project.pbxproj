@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2658F1D16D5E20360BA79F29 /* libPods-BeerApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1373A02F62E4D32D8B1FCD9F /* libPods-BeerApp.a */; };
+		8D4E692A2B474394008B8BF5 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4E69292B474394008B8BF5 /* UIImageView.swift */; };
+		8D4E692C2B474501008B8BF5 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4E692B2B474501008B8BF5 /* UITableView.swift */; };
 		B2BE65E12A4451CE00F490B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE65E02A4451CE00F490B3 /* AppDelegate.swift */; };
 		B2BE65E32A4451CE00F490B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE65E22A4451CE00F490B3 /* SceneDelegate.swift */; };
 		B2BE65EA2A4451D000F490B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2BE65E92A4451D000F490B3 /* Assets.xcassets */; };
@@ -15,8 +18,8 @@
 		B2BE66002A4453CB00F490B3 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE65FF2A4453CB00F490B3 /* Beer.swift */; };
 		B2BE66022A44540700F490B3 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE66012A44540700F490B3 /* TabBarController.swift */; };
 		B2BE66052A44545800F490B3 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE66042A44545800F490B3 /* Resources.swift */; };
-		B2BE66082A44548D00F490B3 /* UIColorE.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE66072A44548D00F490B3 /* UIColorE.swift */; };
-		B2BE660A2A44549D00F490B3 /* UIViewE.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE66092A44549D00F490B3 /* UIViewE.swift */; };
+		B2BE66082A44548D00F490B3 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE66072A44548D00F490B3 /* UIColor.swift */; };
+		B2BE660A2A44549D00F490B3 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE66092A44549D00F490B3 /* UIView.swift */; };
 		B2BE660C2A4454DC00F490B3 /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE660B2A4454DC00F490B3 /* NavBarController.swift */; };
 		B2BE66102A44554B00F490B3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE660F2A44554B00F490B3 /* MenuViewController.swift */; };
 		B2BE66132A446A7D00F490B3 /* AssemblyModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE66122A446A7D00F490B3 /* AssemblyModelBuilder.swift */; };
@@ -34,6 +37,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E8CF22FF2A3290E032F179C /* Pods-BeerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerApp.debug.xcconfig"; path = "Target Support Files/Pods-BeerApp/Pods-BeerApp.debug.xcconfig"; sourceTree = "<group>"; };
+		1373A02F62E4D32D8B1FCD9F /* libPods-BeerApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BeerApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		348E01205B9D57DFB8E03253 /* Pods-BeerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerApp.release.xcconfig"; path = "Target Support Files/Pods-BeerApp/Pods-BeerApp.release.xcconfig"; sourceTree = "<group>"; };
+		8D4E69292B474394008B8BF5 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		8D4E692B2B474501008B8BF5 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		B2BE65DD2A4451CE00F490B3 /* BeerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BE65E02A4451CE00F490B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2BE65E22A4451CE00F490B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,8 +52,8 @@
 		B2BE65FF2A4453CB00F490B3 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		B2BE66012A44540700F490B3 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		B2BE66042A44545800F490B3 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
-		B2BE66072A44548D00F490B3 /* UIColorE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorE.swift; sourceTree = "<group>"; };
-		B2BE66092A44549D00F490B3 /* UIViewE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewE.swift; sourceTree = "<group>"; };
+		B2BE66072A44548D00F490B3 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		B2BE66092A44549D00F490B3 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		B2BE660B2A4454DC00F490B3 /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
 		B2BE660F2A44554B00F490B3 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		B2BE66122A446A7D00F490B3 /* AssemblyModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyModelBuilder.swift; sourceTree = "<group>"; };
@@ -67,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2658F1D16D5E20360BA79F29 /* libPods-BeerApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +87,8 @@
 			children = (
 				B2BE65DF2A4451CE00F490B3 /* BeerApp */,
 				B2BE65DE2A4451CE00F490B3 /* Products */,
+				D240091EE3B6B78DDC132C9B /* Pods */,
+				EE5862F20CAC73D042EBDF09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -196,8 +207,10 @@
 		B2BE66062A44547600F490B3 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				B2BE66072A44548D00F490B3 /* UIColorE.swift */,
-				B2BE66092A44549D00F490B3 /* UIViewE.swift */,
+				B2BE66072A44548D00F490B3 /* UIColor.swift */,
+				B2BE66092A44549D00F490B3 /* UIView.swift */,
+				8D4E69292B474394008B8BF5 /* UIImageView.swift */,
+				8D4E692B2B474501008B8BF5 /* UITableView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -241,6 +254,23 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		D240091EE3B6B78DDC132C9B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E8CF22FF2A3290E032F179C /* Pods-BeerApp.debug.xcconfig */,
+				348E01205B9D57DFB8E03253 /* Pods-BeerApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EE5862F20CAC73D042EBDF09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1373A02F62E4D32D8B1FCD9F /* libPods-BeerApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -248,9 +278,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2BE65F12A4451D000F490B3 /* Build configuration list for PBXNativeTarget "BeerApp" */;
 			buildPhases = (
+				503524FE7C2577A38BF2B08C /* [CP] Check Pods Manifest.lock */,
 				B2BE65D92A4451CE00F490B3 /* Sources */,
 				B2BE65DA2A4451CE00F490B3 /* Frameworks */,
 				B2BE65DB2A4451CE00F490B3 /* Resources */,
+				040D45B701803F4503EBC1EB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -306,6 +338,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		040D45B701803F4503EBC1EB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BeerApp/Pods-BeerApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BeerApp/Pods-BeerApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BeerApp/Pods-BeerApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		503524FE7C2577A38BF2B08C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BeerApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B2BE65D92A4451CE00F490B3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -316,13 +390,14 @@
 				B2BE66102A44554B00F490B3 /* MenuViewController.swift in Sources */,
 				B2BE65E12A4451CE00F490B3 /* AppDelegate.swift in Sources */,
 				B2BE66252A446DB200F490B3 /* CetegoryCell.swift in Sources */,
-				B2BE66082A44548D00F490B3 /* UIColorE.swift in Sources */,
+				8D4E692C2B474501008B8BF5 /* UITableView.swift in Sources */,
+				B2BE66082A44548D00F490B3 /* UIColor.swift in Sources */,
 				B2BE65E32A4451CE00F490B3 /* SceneDelegate.swift in Sources */,
 				B2BE66052A44545800F490B3 /* Resources.swift in Sources */,
 				B2BE66212A446D2000F490B3 /* BannerCell.swift in Sources */,
 				B2BE66022A44540700F490B3 /* TabBarController.swift in Sources */,
 				B2BE66132A446A7D00F490B3 /* AssemblyModelBuilder.swift in Sources */,
-				B2BE660A2A44549D00F490B3 /* UIViewE.swift in Sources */,
+				B2BE660A2A44549D00F490B3 /* UIView.swift in Sources */,
 				B2BE66272A446DEE00F490B3 /* MenuButton.swift in Sources */,
 				B2BE660C2A4454DC00F490B3 /* NavBarController.swift in Sources */,
 				B2BE66172A446B1000F490B3 /* NetworkServicesBeer.swift in Sources */,
@@ -330,6 +405,7 @@
 				B2BE662B2A446E5100F490B3 /* MenuDetailViewController.swift in Sources */,
 				B2BE66232A446D6000F490B3 /* BeerTableCell.swift in Sources */,
 				B2BE66002A4453CB00F490B3 /* Beer.swift in Sources */,
+				8D4E692A2B474394008B8BF5 /* UIImageView.swift in Sources */,
 				B2BE661B2A446BB800F490B3 /* MenuDetailPresenter.swift in Sources */,
 				B2BE66292A446E1A00F490B3 /* NavBarMenu.swift in Sources */,
 				B2BE66192A446B5E00F490B3 /* MenuPresenter.swift in Sources */,
@@ -386,7 +462,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -447,7 +523,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -468,6 +544,7 @@
 		};
 		B2BE65F22A4451D000F490B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E8CF22FF2A3290E032F179C /* Pods-BeerApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -496,6 +573,7 @@
 		};
 		B2BE65F32A4451D000F490B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 348E01205B9D57DFB8E03253 /* Pods-BeerApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -1,9 +1,4 @@
-//
-//  MenuViewController.swift
-//  BeerApp
-//
-//  Created by admin1 on 22.06.23.
-//
+
 
 import UIKit
 
@@ -52,16 +47,8 @@ final class MenuViewController: UIViewController {
     
     private var activityIndicator = UIActivityIndicatorView()
     
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super .init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        
-        setupViews()
-        addConstraintViews()
-        configureAppearance()
-    }
-    
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
         setupViews()
         addConstraintViews()
@@ -71,11 +58,15 @@ final class MenuViewController: UIViewController {
 
 extension MenuViewController {
     private func setupViews() {
-        [navBarMenu,
+        [
+            navBarMenu,
          collectionViewBanner,
          collectionViewCategories,
          mainTableView,
-         activityIndicator].forEach { view.addViews(view: $0) }
+         activityIndicator
+        ].forEach {
+            view.addViews(view: $0)
+        }
     }
     
     private func configureAppearance() {
@@ -83,7 +74,7 @@ extension MenuViewController {
         
         collectionViewBanner.register(BannerCell.self, forCellWithReuseIdentifier: "\(BannerCell.self)")
         collectionViewCategories.register(СategoryCell.self, forCellWithReuseIdentifier: "\(СategoryCell.self)")
-        mainTableView.register(BeerTableCell.self, forCellReuseIdentifier: "\(BeerTableCell.self)")
+        mainTableView.register(BeerTableCell.self)
         
         collectionViewCategories.dataSource = self
         collectionViewCategories.delegate = self
@@ -173,13 +164,10 @@ extension MenuViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "\(BeerTableCell.self)",
-                                                       for: indexPath) as? BeerTableCell
-        else { return UITableViewCell() }
+        guard let beerData = presenter.beerElement?[indexPath.row] else { return UITableViewCell() }
         
-        guard let title = presenter.beerElement?[indexPath.row] else { return UITableViewCell() }
-        cell.setupDataCell(title)
-        print(title)
+        let cell: BeerTableCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
+        cell.setupDataCell(beerData)
         return cell
     }
 }
