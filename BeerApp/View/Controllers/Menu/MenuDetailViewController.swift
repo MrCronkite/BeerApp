@@ -92,9 +92,9 @@ extension MenuDetailViewController {
 }
 
 extension MenuDetailViewController: MenuDetailViewProtocol {
-    func setBeerData(beerElement: BeerElement?, image: UIImage) {
-        lableBeer.text = beerElement?.name
-        descriptionBeerLabel.text = beerElement?.description
-        imageBeer.image = image
+    func setBeerData(beerElement: BeerElement) {
+        lableBeer.text = beerElement.name
+        descriptionBeerLabel.text = beerElement.description
+        imageBeer.image(url: beerElement.imageURL)
     }
 }

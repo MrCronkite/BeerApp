@@ -8,14 +8,11 @@
 import UIKit
 
 protocol MenuDetailViewProtocol: AnyObject {
-    func setBeerData(beerElement: BeerElement?, image: UIImage)
+    func setBeerData(beerElement: BeerElement)
 }
 
 protocol MenuDetailViewPresenterProtocol: AnyObject {
-    init(view: MenuDetailViewProtocol,
-         networkService: NetworkServicesBeer,
-         beerElement: BeerElement?, image: UIImage,
-         router: RouterProtocol)
+    var beerElement: BeerElement { get set }
     
     func setBeerData()
     func backToRootVC()
@@ -25,19 +22,17 @@ class MenuDetailPresenter: MenuDetailViewPresenterProtocol {
     weak var view: MenuDetailViewProtocol?
     let networkService: NetworkServicesBeer
     var router: RouterProtocol?
-    var image: UIImage
-    var beerElement: BeerElement?
+    var beerElement: BeerElement
     
-    required init(view: MenuDetailViewProtocol,
+    init(view: MenuDetailViewProtocol,
                   networkService: NetworkServicesBeer,
-                  beerElement: BeerElement?,
-                  image: UIImage,
+                  beerElement: BeerElement,
+                
                   router: RouterProtocol) {
         
         self.view = view
         self.networkService = networkService
         self.beerElement = beerElement
-        self.image = image
         self.router = router
     }
     
@@ -46,7 +41,7 @@ class MenuDetailPresenter: MenuDetailViewPresenterProtocol {
     }
     
     public func setBeerData() {
-        self.view?.setBeerData(beerElement: beerElement, image: image)
+        self.view?.setBeerData(beerElement: beerElement)
     }
 }
 

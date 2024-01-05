@@ -7,8 +7,7 @@ final class MenuViewController: UIViewController {
     let banners: [Photo] = Banner.allBanners()
     let categoryBeer = ["3.2-4.6%", "4.5-6.2%", "6.3-7.4%", "7-10%", "9-14%"]
     
-    var presenter: MenuPresenterProtocol!
-    var storage: StorageManagerProtocol = StorageManager()
+    var presenter: MenuPresenterProtocol?
     
     private let navBarMenu = NavBarMenu()
     
@@ -160,11 +159,11 @@ extension MenuViewController: UICollectionViewDelegate {
 //MARK: - TableDataSource
 extension MenuViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        presenter.beerElement?.count ?? 0
+        presenter?.beerElement?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let beerData = presenter.beerElement?[indexPath.row] else { return UITableViewCell() }
+        guard let beerData = presenter?.beerElement?[indexPath.row] else { return UITableViewCell() }
         
         let cell: BeerTableCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
         cell.setupDataCell(beerData)
@@ -175,9 +174,8 @@ extension MenuViewController: UITableViewDataSource {
 //MARK: - TableDelegate
 extension MenuViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let beerElement = presenter.beerElement?[indexPath.row]
-        let image = storage.images(forKey: .keysBeer)?[indexPath.row]
-        presenter.tapOnTheBeerElement(beerElement: beerElement, image: image!)
+        guard let beerData = presenter?.beerElement?[indexPath.row] else { return }
+        presenter?.tapOnBeerElement(beerData)
     }
 }
 

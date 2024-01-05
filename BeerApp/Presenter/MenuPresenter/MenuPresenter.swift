@@ -1,9 +1,4 @@
-//
-//  MenuPresenter.swift
-//  BeerApp
-//
-//  Created by admin1 on 22.06.23.
-//
+
 
 import UIKit
 
@@ -16,11 +11,9 @@ protocol MenuPresenterProtocol: AnyObject {
     var beerElement: [BeerElement]? { get set }
     var images: [UIImage] { get set }
     
-    init(view: MenuViewProtocol, networkService: NetworkServicesBeer, router: RouterProtocol, storage: StorageManagerProtocol)
-    
     func getBeer()
     func getImagesBeer()
-    func tapOnTheBeerElement(beerElement: BeerElement?, image: UIImage)
+    func tapOnBeerElement(_ beerData: BeerElement)
 }
 
 final class MenuPresenterImpl: MenuPresenterProtocol {
@@ -39,8 +32,8 @@ final class MenuPresenterImpl: MenuPresenterProtocol {
         getBeer()
     }
     
-    func tapOnTheBeerElement(beerElement: BeerElement?, image: UIImage) {
-        router?.showDetail(beerElement: beerElement, image: image)
+    func tapOnBeerElement(_ beerData: BeerElement) {
+        router?.showDetailController(beerData)
     }
     
     func getBeer() {
