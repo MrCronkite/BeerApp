@@ -10,6 +10,9 @@
 		2658F1D16D5E20360BA79F29 /* libPods-BeerApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1373A02F62E4D32D8B1FCD9F /* libPods-BeerApp.a */; };
 		8D4E692A2B474394008B8BF5 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4E69292B474394008B8BF5 /* UIImageView.swift */; };
 		8D4E692C2B474501008B8BF5 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4E692B2B474501008B8BF5 /* UITableView.swift */; };
+		8DA92D3E2B47ECE500B21E48 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA92D3D2B47ECE500B21E48 /* BaseController.swift */; };
+		8DA92D422B47EFD900B21E48 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA92D412B47EFD900B21E48 /* LoadingView.swift */; };
+		8DA92D442B47F0BB00B21E48 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA92D432B47F0BB00B21E48 /* BaseView.swift */; };
 		B2BE65E12A4451CE00F490B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE65E02A4451CE00F490B3 /* AppDelegate.swift */; };
 		B2BE65E32A4451CE00F490B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE65E22A4451CE00F490B3 /* SceneDelegate.swift */; };
 		B2BE65EA2A4451D000F490B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2BE65E92A4451D000F490B3 /* Assets.xcassets */; };
@@ -42,6 +45,9 @@
 		348E01205B9D57DFB8E03253 /* Pods-BeerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerApp.release.xcconfig"; path = "Target Support Files/Pods-BeerApp/Pods-BeerApp.release.xcconfig"; sourceTree = "<group>"; };
 		8D4E69292B474394008B8BF5 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		8D4E692B2B474501008B8BF5 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		8DA92D3D2B47ECE500B21E48 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		8DA92D412B47EFD900B21E48 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		8DA92D432B47F0BB00B21E48 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		B2BE65DD2A4451CE00F490B3 /* BeerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BE65E02A4451CE00F490B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2BE65E22A4451CE00F490B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +88,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8DA92D3C2B47ECD400B21E48 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8DA92D3D2B47ECE500B21E48 /* BaseController.swift */,
+				8DA92D432B47F0BB00B21E48 /* BaseView.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		8DA92D3F2B47EF8900B21E48 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8DA92D402B47EF9300B21E48 /* LoadingView */,
+				8DA92D3C2B47ECD400B21E48 /* Base */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8DA92D402B47EF9300B21E48 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				8DA92D412B47EFD900B21E48 /* LoadingView.swift */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
 		B2BE65D42A4451CE00F490B3 = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +250,7 @@
 		B2BE660D2A44551400F490B3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8DA92D3F2B47EF8900B21E48 /* Views */,
 				B2BE660E2A44552700F490B3 /* Menu */,
 			);
 			path = Controllers;
@@ -387,14 +420,17 @@
 			files = (
 				B2BE65FE2A44539F00F490B3 /* StorageManager.swift in Sources */,
 				B2BE661E2A446C0200F490B3 /* MenuRouter.swift in Sources */,
+				8DA92D3E2B47ECE500B21E48 /* BaseController.swift in Sources */,
 				B2BE66102A44554B00F490B3 /* MenuViewController.swift in Sources */,
 				B2BE65E12A4451CE00F490B3 /* AppDelegate.swift in Sources */,
 				B2BE66252A446DB200F490B3 /* CetegoryCell.swift in Sources */,
+				8DA92D442B47F0BB00B21E48 /* BaseView.swift in Sources */,
 				8D4E692C2B474501008B8BF5 /* UITableView.swift in Sources */,
 				B2BE66082A44548D00F490B3 /* UIColor.swift in Sources */,
 				B2BE65E32A4451CE00F490B3 /* SceneDelegate.swift in Sources */,
 				B2BE66052A44545800F490B3 /* Resources.swift in Sources */,
 				B2BE66212A446D2000F490B3 /* BannerCell.swift in Sources */,
+				8DA92D422B47EFD900B21E48 /* LoadingView.swift in Sources */,
 				B2BE66022A44540700F490B3 /* TabBarController.swift in Sources */,
 				B2BE66132A446A7D00F490B3 /* AssemblyModelBuilder.swift in Sources */,
 				B2BE660A2A44549D00F490B3 /* UIView.swift in Sources */,

@@ -1,9 +1,4 @@
-//
-//  AppDelegate.swift
-//  BeerApp
-//
-//  Created by admin1 on 22.06.23.
-//
+
 
 import UIKit
 

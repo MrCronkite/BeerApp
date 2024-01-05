@@ -2,7 +2,7 @@
 
 import UIKit
 
-final class MenuViewController: UIViewController {
+final class MenuViewController: BaseController {
     
     let banners: [Photo] = Banner.allBanners()
     let categoryBeer = ["3.2-4.6%", "4.5-6.2%", "6.3-7.4%", "7-10%", "9-14%"]
@@ -44,31 +44,32 @@ final class MenuViewController: UIViewController {
         return collectionView
     }()
     
-    private var activityIndicator = UIActivityIndicatorView()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter?.getDataBeer()
+        showLoading()
         
-        setupViews()
+        setupView()
         addConstraintViews()
         configureAppearance()
     }
 }
 
 extension MenuViewController {
-    private func setupViews() {
+    override func setupView() {
+        super.setupView()
         [
-            navBarMenu,
+         navBarMenu,
          collectionViewBanner,
          collectionViewCategories,
          mainTableView,
-         activityIndicator
         ].forEach {
             view.addViews(view: $0)
         }
     }
     
-    private func configureAppearance() {
+    override func configureAppearance() {
+        super.configureAppearance()
         view.backgroundColor = R.Colors.backgraund
         
         collectionViewBanner.register(BannerCell.self, forCellWithReuseIdentifier: "\(BannerCell.self)")
@@ -80,10 +81,10 @@ extension MenuViewController {
         collectionViewBanner.dataSource = self
         mainTableView.dataSource = self
         mainTableView.delegate = self
-        activityIndicator.startAnimating()
     }
     
-    private func addConstraintViews() {
+    override func addConstraintViews() {
+        super.addConstraintViews()
         NSLayoutConstraint.activate([
             navBarMenu.topAnchor.constraint(equalTo: view.topAnchor),
             navBarMenu.leadingAnchor.constraint(equalTo: view.leadingAnchor),
@@ -102,14 +103,9 @@ extension MenuViewController {
             mainTableView.topAnchor.constraint(equalTo: collectionViewCategories.bottomAnchor, constant: 21),
             mainTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
             mainTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
-            mainTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0),
-            
-            activityIndicator.topAnchor.constraint(equalTo: collectionViewCategories.bottomAnchor, constant: 200),
-            activityIndicator.centerXAnchor.constraint(equalTo: mainTableView.centerXAnchor)
+            mainTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0)
         ])
     }
-    
-    
 }
 
 //MARK: - CollectionDataSource
@@ -181,13 +177,9 @@ extension MenuViewController: UITableViewDelegate {
 
 //MARK: - MenuViewProtocol
 extension MenuViewController: MenuViewProtocol {
-    func failure(error: Error) {
-        print(error.localizedDescription)
-    }
-    
-    func succes() {
-        self.mainTableView.reloadData()
-        self.activityIndicator.stopAnimating()
+    func reloadViewData() {
+        mainTableView.reloadData()
+        hideLoading()
     }
 }
 
