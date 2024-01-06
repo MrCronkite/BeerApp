@@ -13,6 +13,7 @@ class BaseController: UIViewController {
         setupView()
         addConstraintViews()
         configureAppearance()
+        setupBehavior()
     }
 }
  
@@ -38,6 +39,8 @@ class BaseController: UIViewController {
     func configureAppearance() {
         view.backgroundColor = R.Colors.backgraund
     }
+    
+    func setupBehavior() {}
 }
 
 

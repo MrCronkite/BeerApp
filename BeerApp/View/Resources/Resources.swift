@@ -20,6 +20,12 @@ enum R {
     enum Images {
         static var banner = UIImage(named: "advBanner")
         static var downArrow = UIImage(named: "downArrow")
+        static var arreyBanners = [
+            UIImage(named: "advBanner"),
+            UIImage(named: "advBanner"),
+            UIImage(named: "advBanner"),
+            UIImage(named: "advBanner")
+        ]
     }
     
     enum Strings {
@@ -33,6 +39,14 @@ enum R {
                 }
             }
         }
+        
+       static let categoryBeer = [
+        "3.2-4.6%",
+        "4.5-6.2%",
+        "6.3-7.4%",
+        "7-10%",
+        "9-14%"
+       ]
     }
     
     enum ImagesBar {

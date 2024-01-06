@@ -7,11 +7,9 @@ protocol MenuViewProtocol: AnyObject {
 }
 
 protocol MenuPresenterProtocol: AnyObject {
-    var beerElement: [BeerElement]? { get set }
-    var images: [UIImage] { get set }
+    var beerElement: [BeerElement] { get set }
     
     func getDataBeer()
-    func getImagesBeer()
     func tapOnBeerElement(_ beerData: BeerElement)
 }
 
@@ -20,8 +18,7 @@ final class MenuPresenterImpl: MenuPresenterProtocol {
     var router: RouterProtocol?
     var storage: StorageManagerProtocol
     let networkService: NetworkServicesBeer
-    var beerElement: [BeerElement]?
-    var images = [UIImage] ()
+    var beerElement: [BeerElement] = []
     
     required init(view: MenuViewProtocol, networkService: NetworkServicesBeer, router: RouterProtocol, storage: StorageManagerProtocol) {
         self.view = view
@@ -45,27 +42,6 @@ final class MenuPresenterImpl: MenuPresenterProtocol {
                 case .failure(let error):
                     print(error)
                 }
-            }
-        }
-    }
-    
-    func getImagesBeer() {
-        let dispatchGroup = DispatchGroup()
-        if storage.images(forKey: .keysBeer) != nil { self.view?.reloadViewData() }
-        guard let beerElement = beerElement else { return }
-        for i in 0..<beerElement.count {
-            
-            dispatchGroup.enter()
-            networkService.asyncLoadImage(imageURL: URL(string: beerElement[i].imageURL)!,
-                                          runQueue: DispatchQueue.global(),
-                                          completionQueue: DispatchQueue.main) { [weak self] result, error in
-                guard let self = self else { return }
-                guard let image = result else { return }
-                self.images.append(image)
-                if self.images.count == 25 {
-                    self.view?.reloadViewData()
-                    self.storage.setImages(self.images, forKey: .keysBeer) }
-                dispatchGroup.leave()
             }
         }
     }

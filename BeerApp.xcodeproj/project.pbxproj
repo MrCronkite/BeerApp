@@ -13,6 +13,7 @@
 		8DA92D3E2B47ECE500B21E48 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA92D3D2B47ECE500B21E48 /* BaseController.swift */; };
 		8DA92D422B47EFD900B21E48 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA92D412B47EFD900B21E48 /* LoadingView.swift */; };
 		8DA92D442B47F0BB00B21E48 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA92D432B47F0BB00B21E48 /* BaseView.swift */; };
+		8DA92D462B49EB1900B21E48 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA92D452B49EB1900B21E48 /* UICollectionView.swift */; };
 		B2BE65E12A4451CE00F490B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE65E02A4451CE00F490B3 /* AppDelegate.swift */; };
 		B2BE65E32A4451CE00F490B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE65E22A4451CE00F490B3 /* SceneDelegate.swift */; };
 		B2BE65EA2A4451D000F490B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2BE65E92A4451D000F490B3 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		8DA92D3D2B47ECE500B21E48 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		8DA92D412B47EFD900B21E48 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		8DA92D432B47F0BB00B21E48 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		8DA92D452B49EB1900B21E48 /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
 		B2BE65DD2A4451CE00F490B3 /* BeerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BE65E02A4451CE00F490B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2BE65E22A4451CE00F490B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 				B2BE66092A44549D00F490B3 /* UIView.swift */,
 				8D4E69292B474394008B8BF5 /* UIImageView.swift */,
 				8D4E692B2B474501008B8BF5 /* UITableView.swift */,
+				8DA92D452B49EB1900B21E48 /* UICollectionView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 			files = (
 				B2BE65FE2A44539F00F490B3 /* StorageManager.swift in Sources */,
 				B2BE661E2A446C0200F490B3 /* MenuRouter.swift in Sources */,
+				8DA92D462B49EB1900B21E48 /* UICollectionView.swift in Sources */,
 				8DA92D3E2B47ECE500B21E48 /* BaseController.swift in Sources */,
 				B2BE66102A44554B00F490B3 /* MenuViewController.swift in Sources */,
 				B2BE65E12A4451CE00F490B3 /* AppDelegate.swift in Sources */,
