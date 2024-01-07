@@ -64,7 +64,7 @@ extension LoadingView {
     func finish() {
         UIView.animate(withDuration: 0.3, animations: {
             self.alpha = 0.0
-        }, completion: {finished in
+        }, completion: { finished in
             self.indicator.stopAnimating()
             self.isAnimating = false
         })

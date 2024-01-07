@@ -1,17 +1,9 @@
-//
-//  NetworkServicesBeer.swift
-//  BeerApp
-//
-//  Created by admin1 on 22.06.23.
-//
+
 
 import UIKit
 
 protocol NetworkServicesBeer {
     func getBeerData (complition: @escaping (Result<[BeerElement], Error>) -> Void)
-    func asyncLoadImage(imageURL: URL, runQueue: DispatchQueue,
-                        completionQueue: DispatchQueue,
-                        completion: @escaping (UIImage?, Error?) -> ())
 }
 
 enum Errors: Error {
@@ -53,18 +45,5 @@ final class NetworkServicesBeerImpl: NetworkServicesBeer {
             }
         }
         request.resume()
-    }
-    
-    func asyncLoadImage(imageURL: URL, runQueue: DispatchQueue,
-                        completionQueue: DispatchQueue,
-                        completion: @escaping (UIImage?, Error?) -> ()) {
-        runQueue.async {
-            do {
-                let data = try Data(contentsOf: imageURL)
-                completionQueue.async { completion(UIImage(data: data), nil)}
-            } catch let error {
-                completionQueue.async { completion(nil, error)}
-            }
-        }
     }
 }

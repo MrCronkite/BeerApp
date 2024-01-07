@@ -1,9 +1,4 @@
-//
-//  StorageManager.swift
-//  BeerApp
-//
-//  Created by admin1 on 22.06.23.
-//
+
 
 import UIKit
 
@@ -19,7 +14,7 @@ protocol StorageManagerProtocol {
 
 final class StorageManager {
     
-    public enum Keys: String {
+    enum Keys: String {
         case keysBeer
     }
     

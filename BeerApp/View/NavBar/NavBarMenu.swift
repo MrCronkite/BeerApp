@@ -1,13 +1,8 @@
-//
-//  NavBarMenu.swift
-//  BeerApp
-//
-//  Created by admin1 on 22.06.23.
-//
+
 
 import UIKit
 
-final class NavBarMenu: UIView {
+final class NavBarMenu: BaseView {
     
     private let dropItemButton: MenuButton = {
         let button = MenuButton()
@@ -16,31 +11,17 @@ final class NavBarMenu: UIView {
         button.layer.cornerRadius = 15
         return button
     }()
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        
-        setupViews()
-        addConstraintViews()
-        configureAppearance()
-    }
-    
-    required init?(coder: NSCoder) {
-        super.init(frame: .zero)
-        
-        setupViews()
-        addConstraintViews()
-        configureAppearance()
-    }
-    
 }
 
 extension NavBarMenu {
-    private func setupViews() {
+    override func setupView() {
+        super.setupView()
         addViews(view: dropItemButton)
     }
     
-    private func addConstraintViews() {
+    override func addConstraintViews() {
+        super.addConstraintViews()
+        
         NSLayoutConstraint.activate([
             dropItemButton.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
             dropItemButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
@@ -50,7 +31,8 @@ extension NavBarMenu {
         ])
     }
     
-    private func configureAppearance() {
+    override func configureAppearance() {
+        super.configureAppearance()
         backgroundColor = .white
     }
 }

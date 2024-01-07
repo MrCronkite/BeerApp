@@ -1,9 +1,4 @@
-//
-//  NavBarController.swift
-//  BeerApp
-//
-//  Created by admin1 on 22.06.23.
-//
+
 
 import UIKit
 
@@ -11,12 +6,14 @@ final class NavBarControler: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        configure()
+        configureAppearance()
     }
-    
-    private func configure() {
+}
+
+extension NavBarControler {
+    private func configureAppearance() {
         view.backgroundColor = .white
         navigationBar.isHidden = true
     }
 }
+ 

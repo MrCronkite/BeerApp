@@ -16,10 +16,11 @@ final class MenuViewController: BaseController {
         tableView.separatorColor = R.Colors.inactive
         tableView.separatorInset = .init(top: 0, left: 0, bottom: 0, right: 0)
         tableView.rowHeight = UITableView.automaticDimension
+        tableView.backgroundColor = .clear
         return tableView
     }()
     
-   private let collectionViewBanner: UICollectionView = {
+    private let collectionViewBanner: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = .init(width: 300, height: 112)
         layout.scrollDirection = .horizontal
@@ -34,6 +35,7 @@ final class MenuViewController: BaseController {
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = .init(width: 88, height: 32)
         layout.scrollDirection = .horizontal
+        layout.sectionInset.left = 20
         
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.backgroundColor = R.Colors.backgraund
@@ -56,10 +58,10 @@ extension MenuViewController {
     override func setupView() {
         super.setupView()
         [
-         navBarMenu,
-         collectionViewBanner,
-         collectionViewCategories,
-         mainTableView,
+            navBarMenu,
+            collectionViewBanner,
+            collectionViewCategories,
+            mainTableView,
         ].forEach {
             view.addViews(view: $0)
         }
@@ -168,6 +170,22 @@ extension MenuViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let beerData = presenter?.beerElement[indexPath.row] else { return }
         presenter?.tapOnBeerElement(beerData)
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView == mainTableView {
+            if scrollView.contentOffset.y > 0 {
+                UIView.animate(withDuration: 1) {
+                    self.mainTableView.topAnchor.constraint(equalTo: self.navBarMenu.bottomAnchor, constant: 0).isActive = true
+                    self.view.layoutIfNeeded()
+                }
+            } else if scrollView.contentOffset.y < 0 {
+                UIView.animate(withDuration: 1) {
+                    self.mainTableView.topAnchor.constraint(equalTo: self.collectionViewCategories.bottomAnchor, constant: 21).isActive = true
+                    self.view.layoutIfNeeded()
+                }
+            }
+        }
     }
 }
 

@@ -20,7 +20,7 @@ final class MenuPresenterImpl: MenuPresenterProtocol {
     let networkService: NetworkServicesBeer
     var beerElement: [BeerElement] = []
     
-    required init(view: MenuViewProtocol, networkService: NetworkServicesBeer, router: RouterProtocol, storage: StorageManagerProtocol) {
+    init(view: MenuViewProtocol, networkService: NetworkServicesBeer, router: RouterProtocol, storage: StorageManagerProtocol) {
         self.view = view
         self.networkService = networkService
         self.router = router

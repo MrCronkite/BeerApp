@@ -1,9 +1,4 @@
-//
-//  MenuButton.swift
-//  BeerApp
-//
-//  Created by admin1 on 22.06.23.
-//
+
 
 import UIKit
 
@@ -39,10 +34,10 @@ final class MenuButton: UIButton {
 
 extension MenuButton {
     private func configureMenuButton() {
-        [menuLable,
-         imageArrow].forEach { addViews(view: $0) }
-        
-        buttonAnimation(self)
+        [
+            menuLable,
+         imageArrow
+        ].forEach { addViews(view: $0) }
         
         NSLayoutConstraint.activate([
             menuLable.centerYAnchor.constraint(equalTo: centerYAnchor),
@@ -53,5 +48,7 @@ extension MenuButton {
             imageArrow.heightAnchor.constraint(equalToConstant: 5),
             imageArrow.widthAnchor.constraint(equalToConstant: 10)
         ])
+        
+        buttonAnimation(self)
     }
 }
